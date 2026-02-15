@@ -47,7 +47,10 @@
 | Коммутатор     |  SW3-Darkstore         |  Коммутация VLAN 30,40 |
 | Роутер | Internet           | Имитация интернета |
 
-Сеть:
+## 🛠 Инструменты реализации
+Проект полностью развернут и протестирован в эмуляторе сетевой инфраструктуры **EVE-NG (Emulated Virtual Environment - Next Generation)**. 
+
+# Топология сети:
 <img width="1829" height="842" alt="image" src="https://github.com/user-attachments/assets/40310dd0-28e6-4a5d-9ea9-a6d940012b2c" />
 
 **Настроенные DHCP сервера на R-Darkstore для VLAN 30,40:**
@@ -96,6 +99,7 @@
 <img width="637" height="381" alt="image" src="https://github.com/user-attachments/assets/d4df18ca-4eea-4134-a2d8-e26292798c9c" />
 
 **Опубликование веб-сервиса в интернете по адресу 10.10.5.60 по порту 80, а через внешний интерфейс маршрутизатора 8080:**
+
 <img width="624" height="122" alt="image" src="https://github.com/user-attachments/assets/ca666852-1673-44f8-8ed8-8a8c06e0b118" />
 
 <img width="812" height="595" alt="image" src="https://github.com/user-attachments/assets/9d3b14b7-87e9-4123-aa8f-2543a7923648" />
