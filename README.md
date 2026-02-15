@@ -63,6 +63,8 @@
 
 
 **Настройка NAT в сети даркстора и проверка:**
+
+
 <img width="621" height="570" alt="image" src="https://github.com/user-attachments/assets/c130d750-8764-4180-b93f-e58bf80d5eb9" />
 
 <img width="834" height="522" alt="image" src="https://github.com/user-attachments/assets/53be165b-a55d-4874-b006-f39deb942296" />
