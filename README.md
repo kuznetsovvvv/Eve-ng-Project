@@ -11,16 +11,16 @@
 - Настроить DNAT для веб-сервера.
 - Настроить прохождение трафика между внутренними сетями компании через выделенный канал связи.
 
-## 🧮 Адресное пространство VLAN
+## 🧮 Адресное пространство VLAN:
 | VLAN | Название    | Диапазон адресов         | Маска подсети      | Кол-во адресов | Шлюз (SVI)   |
 |------|------------|--------------------------|--------------------|----------------|--------------|
-| 10   | IT  | 10.10.1.0 - 254     | /24 (255.255.255.0) | 254             | 10.10.1.0|
-| 20   |   Managment  | 10.10.2.0 – 254     | /24 (255.255.255.0) | 254             | 10.10.2.0|
-| 30   |  Logistics   | 10.10.3.0 – 254     | /24 (255.255.255.0) | 254             | 10.10.3.0|
-| 40   |   Storage  | 10.10.4.0 – 254     | /24 (255.255.255.0) | 254             | 10.10.4.0|
+| 10   | IT  | 10.10.1.0 - 254     | /24 (255.255.255.0) | 254             | 10.10.1.1|
+| 20   |   Managment  | 10.10.2.0 – 254     | /24 (255.255.255.0) | 254             | 10.10.2.1|
+| 30   |  Logistics   | 10.10.3.0 – 254     | /24 (255.255.255.0) | 254             | 10.10.3.1|
+| 40   |   Storage  | 10.10.4.0 – 254     | /24 (255.255.255.0) | 254             | 10.10.4.1|
 
 
-## 🧮 Адресное пространство серверов
+## 🧮 Адресное пространство серверов, которые имеют статические ip:
 
 | VLAN | Название    | Диапазон адресов         | Маска подсети      | Кол-во адресов |
 | 50   | Серверы головоного офиса    | 10.10.5.0 – 254     | /24 (255.255.255.0) | 254 |
@@ -86,7 +86,34 @@
 
 <img width="826" height="518" alt="image" src="https://github.com/user-attachments/assets/dd86ed8c-85e9-4f00-9570-bd5720b9b8a1" />
 
+**Настройка NAT в сети головного офиса:**
+<img width="755" height="583" alt="image" src="https://github.com/user-attachments/assets/283f487f-8b82-4e4f-a2e4-5833cc3a8b92" />
 
+<img width="826" height="527" alt="image" src="https://github.com/user-attachments/assets/cf967730-de43-481d-88d8-829a3836a7a9" />
 
+<img width="818" height="516" alt="image" src="https://github.com/user-attachments/assets/bec82794-5c73-4393-a914-0abfee0b9ad7" />
 
+<img width="637" height="381" alt="image" src="https://github.com/user-attachments/assets/d4df18ca-4eea-4134-a2d8-e26292798c9c" />
+
+**Опубликование веб-сервиса в интернете по адресу 10.10.5.60 по порту 80, а через внешний интерфейс маршрутизатора 8080:**
+<img width="624" height="122" alt="image" src="https://github.com/user-attachments/assets/ca666852-1673-44f8-8ed8-8a8c06e0b118" />
+
+<img width="812" height="595" alt="image" src="https://github.com/user-attachments/assets/9d3b14b7-87e9-4123-aa8f-2543a7923648" />
+
+<img width="830" height="540" alt="image" src="https://github.com/user-attachments/assets/8e5bb28c-c573-473c-9385-114515c28536" />
+
+<img width="770" height="84" alt="image" src="https://github.com/user-attachments/assets/c76cfc0d-fb3d-4c39-8771-8795fdea948b" />
+
+**Настройка сетевой связности между локациями по выделенному каналу связи WAN:**
+<img width="1279" height="397" alt="image" src="https://github.com/user-attachments/assets/5d07c16a-b77c-44dc-bc0d-ef2ab9d93e61" />
+
+<img width="1279" height="396" alt="image" src="https://github.com/user-attachments/assets/8a695fcd-a893-4e71-a13c-d4039ad4ae21" />
+
+<img width="1278" height="404" alt="image" src="https://github.com/user-attachments/assets/fc0c288c-5184-437d-b7c0-1414c7f18ed0" />
+
+<img width="831" height="522" alt="image" src="https://github.com/user-attachments/assets/989e5b1f-307c-4641-bf96-4a2cd340fa21" />
+
+<img width="852" height="610" alt="image" src="https://github.com/user-attachments/assets/8f07f73a-dcd9-435e-8361-972da9c36516" />
+
+<img width="982" height="613" alt="image" src="https://github.com/user-attachments/assets/a22dfb89-443f-4b72-b9e0-3fffd0742fba" />
 
