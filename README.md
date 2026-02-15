@@ -61,6 +61,7 @@
 **Настройка интернет-сервера:**
 <img width="1276" height="411" alt="image" src="https://github.com/user-attachments/assets/51adf37c-ce8b-4577-b274-c2c37a8fc5b2" />
 
+
 **Настройка NAT в сети даркстора и проверка:**
 <img width="621" height="570" alt="image" src="https://github.com/user-attachments/assets/c130d750-8764-4180-b93f-e58bf80d5eb9" />
 
