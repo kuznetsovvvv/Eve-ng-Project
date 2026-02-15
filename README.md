@@ -37,15 +37,51 @@
 | Сервер   | Mail           | Почтовый сервер |
 | Сервер         | FS              | Хранение файлов |
 | Коммутатор     |  SW1-HQ         |  Коммутация VLAN 10,20 |
-| Коммутатор     |  SW2-HQ         |  Коммутация VLAN 30 |
-| Роутер         |  R-HQ           |  Субинтерфейсы для VLAN, маршрутизация к провайдеру  |
-| Роутер | ISP           | Выход в интернет |
-| Роутер | WAN      | Имитация интернета |
+| Коммутатор     |  SW2-HQ         |  Коммутация VLAN 50 |
+| Роутер         |  R-HQ           |  Субинтерфейсы для VLAN 10,20,50; маршрутизация к провайдеру и внутреннему каналу связи |
+| Роутер | ISP           | Провайдер |
+| Роутер | WAN      | Выделенный внутренний канал связи провайдера |
+| Роутер | R-Darkstore      | Субинтерфейсы для VLAN 30,40,60, маршрутизация к провайдеру и внутреннему каналу связи |
+| Коммутатор     |  SW1-Darkstore         |  Коммутация VLAN 30,40 |
+| Коммутатор     |  SW2-Darkstore         |  Коммутация VLAN 60 |
+| Коммутатор     |  SW3-Darkstore         |  Коммутация VLAN 30,40 |
+| Роутер | Internet           | Имитация интернета |
 
 Сеть:
 <img width="1829" height="842" alt="image" src="https://github.com/user-attachments/assets/40310dd0-28e6-4a5d-9ea9-a6d940012b2c" />
 
+**Настроенные DHCP сервера на R-Darkstore для VLAN 30,40:**
+<img width="826" height="517" alt="image" src="https://github.com/user-attachments/assets/d783cabf-0a63-4f16-8d78-e528cd9afe73" />
 
+<img width="826" height="519" alt="image" src="https://github.com/user-attachments/assets/8b4fbe00-7250-4967-ae8d-46645a4d51ae" />
+
+**Настройка выхода в интернет из Darkstore через IP 55.55.55.105:**
+<img width="1273" height="403" alt="image" src="https://github.com/user-attachments/assets/57a94584-b64f-4f8b-a23a-63d5b37e7e47" />
+
+**Настройка интернет-сервера:**
+<img width="1276" height="411" alt="image" src="https://github.com/user-attachments/assets/51adf37c-ce8b-4577-b274-c2c37a8fc5b2" />
+
+**Настройка NAT в сети даркстора и проверка:**
+<img width="621" height="570" alt="image" src="https://github.com/user-attachments/assets/c130d750-8764-4180-b93f-e58bf80d5eb9" />
+
+<img width="834" height="522" alt="image" src="https://github.com/user-attachments/assets/53be165b-a55d-4874-b006-f39deb942296" />
+
+**Настройка маршрутизации в головном офисе:**
+<img width="1278" height="406" alt="image" src="https://github.com/user-attachments/assets/3643788e-327f-4082-8831-64add755d8f1" />
+
+<img width="1276" height="410" alt="image" src="https://github.com/user-attachments/assets/47e176cb-1f3b-4af2-ac47-54329cf0a977" />
+
+<img width="1279" height="398" alt="image" src="https://github.com/user-attachments/assets/0d2c9c12-56b1-4d5b-bafa-ff93069e9986" />
+
+**Настройка DHCP-сервисов на R-HQ:**
+<img width="825" height="522" alt="image" src="https://github.com/user-attachments/assets/70cc30cf-5ae9-4432-b6a5-776f20d6ddf2" />
+
+<img width="822" height="519" alt="image" src="https://github.com/user-attachments/assets/cecae491-5385-4fc7-83c8-45f4877a3dff" />
+
+**Настройка выхода в интернет из головного офиса 55.55.55.101:**
+<img width="824" height="520" alt="image" src="https://github.com/user-attachments/assets/03cb3435-b1f3-43e8-a3d2-3f180f0a65eb" />
+
+<img width="826" height="518" alt="image" src="https://github.com/user-attachments/assets/dd86ed8c-85e9-4f00-9570-bd5720b9b8a1" />
 
 
 
